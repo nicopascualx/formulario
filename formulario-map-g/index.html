@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario + Google map + php</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- css maps -->
+    <link href="css/map.css" rel="stylesheet">    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+      <!-- CONTACTO + MAPA -->
+    <div class="container" id="contact">
+        <div class="blog-header">
+            <h1 class="blog-title">Contacto</h1>
+        </div>
+        <div class="row">
+            <div id="map-outer" class="col-md-12">
+                <div id="addressdos" class="col-md-4">
+<!-- CHANGE THE ORIGINAL BOOTSTRAP --><h2 style="margin-bottom: 0px;">Donde estamos </h2> 
+                  <address>
+                  <strong>Empresa Arg. (C)</strong><br>
+                      Lorem Ipsum, 0000-0000<br>
+                      <abbr>D:</abbr> -34.6080512 / -58.3724665.
+                 </address>
+                 <!-- FORMULARIO -->
+                 <div class="contenedorfor">
+                  <div class="contenedorfor2">
+
+                    <article class="contenidoa">
+                      <form action="contacto.php" method="post" class="dark-matter">
+                        
+                        <label for="nombre"><span><!--Nombre:--><Your Name></span></label>
+                          <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required />
+                        <label for="email"><span><!--Email:--></span></label>
+                          <input id="email" type="email" name="email" placeholder="Ejemplo@correo.com" required />
+                        <label for="mensaje"><span><!--Mensaje:--></span></label>
+                          <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                        <label><span></span></label>
+                        <div class="bottom">  
+                          <!--input id="submit" class="button" type="submit" name="submit" value="Enviar Mensaje" /-->
+                          <!--button type="submit" value="Enviar Mensaje" class="btn btn-warning pull-right">Send</button-->
+                          <input id="submit" class="btn btn-warning pull-right" type="submit" name="submit" value="Enviar Mensaje" />
+                        </div>
+                      </form>
+                    </article>
+                  </div>
+                </div>
+                </div>
+              <div id="map-container" class="col-md-8"></div>
+            </div><!-- /map -->
+        </div> <!-- /row -->
+    </div>
+        <!-- JavaScript Mapa google -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+   
+  </body>
+</html>
